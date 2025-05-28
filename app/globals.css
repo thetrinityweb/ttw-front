@@ -1,5 +1,50 @@
 @import "tailwindcss";
 
+/* Framework CSS */
+@import url('../public/assets/css/framework/bootstrap.min.css');
+
+/* Fonts */
+@import url('../public/assets/fonts/Inter/style.css');
+
+/* Plugins CSS */
+@import url('../public/assets/css/vlt-plugins.min.css');
+@import url('../public/assets/css/plugins/slick-theme.css');
+
+/* Main CSS */
+@import url('../public/assets/css/vlt-main.css');
+@import url('../public/assets/css/custom.css');
+@import url('../public/assets/css/responsive.css');
+
+/* Google Translate - Hide unwanted elements */
 .skiptranslate {
   display: none!important;
+}
+
+/* Additional Google Translate styling */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-menu-value:hover {
+  text-decoration: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+#google_translate_element {
+  color: transparent;
+}
+
+#google_translate_element a {
+  display: none;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  color: #333 !important;
 }

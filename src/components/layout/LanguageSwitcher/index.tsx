@@ -1,10 +1,24 @@
+"use client";
+
+import { useEffect } from "react";
 import { LanguageDescriptor, useLanguageSwitcher } from "@/src/hooks/useLanguageSwitcher";
 import { NextPageContext } from "next";
 import { twMerge } from "tailwind-merge";
 
-
 export const LanguageSwitcher = ({ context, isGradient }: { context?: NextPageContext; isGradient?: boolean } = {}) => {
   const { currentLanguage, switchLanguage, languageConfig } = useLanguageSwitcher({ context });
+
+  useEffect(() => {
+    // Initialize Google Translate when component mounts
+    if (typeof window !== 'undefined' && (window as any).google?.translate) {
+      const translateElement = new (window as any).google.translate.TranslateElement({
+        pageLanguage: 'pt',
+        includedLanguages: 'en,es,fr,de,it,ja,ko,zh',
+        layout: (window as any).google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  }, []);
 
   if (!languageConfig) {
     return null;
