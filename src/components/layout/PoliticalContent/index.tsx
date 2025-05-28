@@ -5,10 +5,10 @@ export default function PrivacyPolicy() {
         <div className="bg-white px-6 py-24 lg:px-8 overflow-x-hidden">
             <div className="mx-auto max-w-7xl text-base/7 text-gray-700">
                 <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl" data-aos="fade-in">
-                    Tiken: Compromisso com sua Privacidade
+                    Trinity: Compromisso com sua Privacidade
                 </h1>
                 <p className="mt-6 text-xl/8" data-aos="fade-in">
-                    Esta Política de Privacidade descreve como a Tiken coleta, utiliza, armazena e protege seus dados pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
+                    Esta Política de Privacidade descreve como a Trinity coleta, utiliza, armazena e protege seus dados pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
                 </p>
 
                 <div className="mt-10">
@@ -62,13 +62,13 @@ export default function PrivacyPolicy() {
                     </p>
 
                     <p className="mt-6" data-aos="fade-in">
-                        Para exercer seus direitos ou tirar dúvidas, entre em contato com nosso Encarregado de Proteção de Dados (DPO): <strong>privacidade@tiken.com.br</strong>
+                        Para exercer seus direitos ou tirar dúvidas, entre em contato com nosso Encarregado de Proteção de Dados (DPO): <strong>privacidade@Trinity.com.br</strong>
                     </p>
 
                     <figure className="mt-16 border-l border-[#0399c4] pl-9" data-aos="fade-in">
                         <blockquote className="font-semibold text-gray-900">
                             <p>
-                                &quot;Na Tiken, sua privacidade é uma prioridade. Tratamos seus dados com respeito, segurança e transparência.&quot;
+                                &quot;Na Trinity, sua privacidade é uma prioridade. Tratamos seus dados com respeito, segurança e transparência.&quot;
                             </p>
                         </blockquote>
                         <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-gray-500">
