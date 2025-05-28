@@ -105,11 +105,11 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   );
 }
 
-export async function getSiteConfig() {
-  // const { data } = await customFetch<any>(getGetConfigsUrl());
-  // return {
-  //   gaId: data?.google_analytics_id || "",
-  //   whatsAppUrl: data?.whatsapp_url || "",
-  //   gtmId: data?.google_tag_manager_id || ""
-  // };
-}
+// export async function getSiteConfig() {
+//   const { data } = await customFetch<any>(getGetConfigsUrl());
+//   return {
+//     gaId: data?.google_analytics_id || "",
+//     whatsAppUrl: data?.whatsapp_url || "",
+//     gtmId: data?.google_tag_manager_id || ""
+//   };
+// }
