@@ -5,7 +5,7 @@ import "toastify-js/src/toastify.css"
 import Script from "next/script";
 import AOS_Init from "@/src/components/layout/AOS_Init";
 import { CookieConsentComponent } from "@/src/components/layout/CookieConsentComponent";
-import VLTScripts from '@/src/components/layout/VLTScripts';
+import VLTScripts from '@/src/components/layout/VLT/VLTScripts';
 // import { GoogleAnalytics } from "@next/third-parties/google";
 // import customFetch from "@/src/services/custom-fetch";
 // import { getGetConfigsUrl } from "@/src/services/api";
