@@ -5,6 +5,7 @@ import "toastify-js/src/toastify.css"
 import Script from "next/script";
 import AOS_Init from "@/src/components/layout/AOS_Init";
 import { CookieConsentComponent } from "@/src/components/layout/CookieConsentComponent";
+import VLTScripts from '@/src/components/layout/VLTScripts';
 // import { GoogleAnalytics } from "@next/third-parties/google";
 // import customFetch from "@/src/services/custom-fetch";
 // import { getGetConfigsUrl } from "@/src/services/api";
@@ -37,6 +38,7 @@ export default async function RootLayout({
   return (
     <html lang="pt-BR">
 
+    
 
       <head>
         {/* Google Tag Manager */}
@@ -49,6 +51,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 })(window,document,'script','dataLayer','${gtmId}');`}
           </Script>
         )} */}
+
+        <link rel="stylesheet" href="/assets/css/framework/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/vlt-plugins.min.css" />
+        <link rel="stylesheet" href="/assets/css/plugins/slick-theme.css" />
+        <link rel="stylesheet" href="/assets/css/vlt-main.css" />
+        <link rel="stylesheet" href="/assets/css/custom.css" />
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
 
 
         {/* Google Translate scripts */}
@@ -66,7 +75,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       </head>
 
       <body
-        className={`${inter.variable} antialiased`}
+        className={`${inter.variable} antialiased no-js vlt-is--custom-cursor`}
       >
 
         {/* Google Tag Manager */}
@@ -87,6 +96,10 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           )
         } */}
         <CookieConsentComponent />
+        
+        {/* Scripts VLT gerenciados pelo Client Component */}
+        <VLTScripts />
+
       </body>
     </html>
   );
