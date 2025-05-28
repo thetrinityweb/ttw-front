@@ -1,6 +1,6 @@
-# Tiken Website
+# Trinity Web Website
 
-Este é o repositório do website da Tiken, desenvolvido com Next.js 15 e React 19.
+Este é o repositório do website da Trinity Web, desenvolvido com Next.js 15 e React 19.
 
 
 ## 🎥 Tutoriais
@@ -21,7 +21,7 @@ Para ajudar no desenvolvimento e manutenção do sistema, criamos uma playlist d
 1. Clone o repositório:
 ```bash
 git clone [URL_DO_REPOSITÓRIO]
-cd tiken-website
+cd ttw-front
 ```
 
 2. Instale as dependências:
@@ -41,23 +41,6 @@ WORDPRESS_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 npm run dev
 ```
 
-## 🏗️ Estrutura do Projeto
-
-O projeto segue a estrutura de diretórios do Next.js 15 com App Router:
-
-```
-app/
-├── blog/              # Página do blog
-├── linha-de-produtos/ # Página de linha de produtos
-├── produtos/         # Página de produtos
-├── quem-somos/       # Página institucional
-├── trabalhe-conosco/ # Página de carreiras
-├── politica-de-privacidade/ # Política de privacidade
-├── globals.css       # Estilos globais
-├── layout.tsx        # Layout principal
-└── page.tsx          # Página inicial
-```
-
 ## 🛠️ Scripts Disponíveis
 
 - `npm run dev` - Inicia o servidor de desenvolvimento com Turbopack
@@ -65,7 +48,6 @@ app/
 - `npm run start` - Inicia o servidor de produção
 - `npm run serve` - Serve a build estática
 - `npm run lint` - Executa o linter
-- `npm run orval` - Executa o gerador de código Orval
 
 ## 🔄 CI/CD
 
@@ -100,14 +82,14 @@ Para executar o build e deploy projeto, você precisará configurar as seguintes
 
 ```env
 WORDPRESS_URL=meucms.wp.com
-FTP_HOST=ftp.tiken.com.br
-FTP_LOGIN=tiken
-FTP_PASSWORD=tiken
+FTP_HOST=ftp.ttw.com.br
+FTP_LOGIN=ttw
+FTP_PASSWORD=ttw
 ```
 
 ## 📝 Licença
 
-Este projeto é privado e proprietário da Tiken.
+Este projeto é privado e proprietário da Trinity Web.
 
 ## 👥 Contribuição
 
